@@ -1,0 +1,33 @@
+body{
+    max-width: 70%;
+    margin: 0 auto;
+    
+}
+.banner{margin-top: 40px;
+    background-color:black ;
+    border-radius: 20px;
+    border: none;
+    max-height:450px ;
+}
+.player{display: flex;
+    align-items: center;
+}
+.text {color: white;
+    width: 50%;
+    margin: 40px;
+}
+.text p{margin-bottom: 40px;}
+.text a{background-color: rgb(187, 6, 6);
+     color: white;
+    text-decoration: none;
+    padding: 12px 50px 12px 20px;
+    border-radius: 5px;
+}
+.text a:hover{background-color: rgb(95, 14, 14)}
+.player-banner{width: 50%; margin: 26px 35px 0}
+.player-banner img{width: 100%;
+}
+
+.blog{display: grid;
+    grid-template-columns:300px 300px 300px;
+}
