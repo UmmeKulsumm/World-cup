@@ -1,33 +1,571 @@
-body{
-    max-width: 70%;
-    margin: 0 auto;
-    
+
+.banner{
+    width: 70%;
+    margin: 3% 15%;
 }
-.banner{margin-top: 40px;
-    background-color:black ;
-    border-radius: 20px;
-    border: none;
-    max-height:450px ;
+.container{display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px 20px 0px 40px;
 }
-.player{display: flex;
-    align-items: center;
-}
-.text {color: white;
-    width: 50%;
-    margin: 40px;
-}
-.text p{margin-bottom: 40px;}
-.text a{background-color: rgb(187, 6, 6);
-     color: white;
-    text-decoration: none;
-    padding: 12px 50px 12px 20px;
-    border-radius: 5px;
-}
-.text a:hover{background-color: rgb(95, 14, 14)}
-.player-banner{width: 50%; margin: 26px 35px 0}
-.player-banner img{width: 100%;
+.text h1{
+    font-size: 40px;
+    font-weight: 700;
+    transition: ease-in color 3s;}
+.container:hover h1{
+    color: rgb(34, 193, 233);
+    transition: 3s;
+  }
+  .text p{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(231, 243, 178);
+    transition: color 2s;}
+ .container:hover p{
+        color: rgb(182, 136, 241);
+        transition: 2s;}
+.toltip{display: none;
+   width: 100%;
 }
 
-.blog{display: grid;
-    grid-template-columns:300px 300px 300px;
+.player-banner img{width: 100%;
+            margin-top: 40px;
+       }
+  
+  .button{
+    display: flex;
+    width: 150px;
+    height: 35px;
+    background-color: rgb(182, 40, 40);
+    align-items: center;
+    margin-bottom: 20px;
+    transition: transform 1.5s, background-color 1.5s;
+    
+  
+ }
+ .fa-street-view{
+    font-size: 18px;}
+
+    .container:hover .button{transform: scale(1.1);
+        transition: 1.5s;
+        background-color: rgb(102, 30, 8)}
+ .button-link a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 20px;
+    font-size: 18px;}
+.start-main-section{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-row-gap: 15px;
 }
+ .three-items{
+    background-color:black;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 10px;
+ }
+ #blog{
+    background-color: rgb(109, 15, 15);
+ }
+ #blog a{
+    color: white}
+.navi{
+        background-color: white;
+        width: 75%;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: center;
+        border-radius: 5px;
+     }
+     .navi  a{
+        text-decoration: none;
+        color: black;
+        }
+
+        .player-team{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap:10px
+        
+         }
+
+         .players{
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 6px;
+         }
+         .players img{
+            width: 100%;
+            }
+         .tlink{
+            text-decoration: none;
+            margin-top: 10px;
+            border: 1px solid rgb(70, 68, 68);
+            width: 85px;
+            text-align: center;
+            border-radius: 5px;
+         }
+         .tlink a{
+            text-decoration: none;
+            display: block;
+            padding: 5px 0
+             
+         }
+        
+         .players h3{
+            font-size: 22px;
+       }
+         .players span{
+            margin-left: 20px;
+        
+         }
+         .view-all{
+            align-items: center;
+            text-align: center;
+            margin-bottom: 45px;}
+        .view-all a{
+           text-decoration: none;
+           font-size: 25px;
+           border: 1px solid red;
+           padding: 10px 20px;
+           background-color: red;
+           color: white;
+           display: none;
+        }
+         /* main area end   */
+        
+        
+         /* footer area start  */
+        
+         footer{
+            background-color: black;
+            color: white;
+            
+         }
+         .footer-sec{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: inline-block;
+         }
+         .footer-sec h3{
+            font-size: 38px;
+         }
+         .footer-sec hr{
+            margin-bottom: 20px;
+         }
+         .footer-sec a{
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+            
+         }
+         .footer-icon{
+            margin-top: 20px;
+         }
+         /* footer area end  */
+        
+        
+        
+         /* media query start  */
+        
+        @media only screen and (max-width: 688px) {
+            .banner{
+                width: 95%;
+                margin: 0;
+                margin-left: 12px;
+                margin-top: 10px;
+             
+             }
+             .container{
+                grid-template-columns: repeat(1, 1fr);
+                padding: 0;
+                text-align: center; 
+               }
+             .text h1{
+                font-size: 55px;
+             }
+             .text p{
+               display: none;
+               
+             }
+             .toltip{
+                display: block;
+              
+             }
+             .player-banner img{
+                width: 80%;
+                margin-top: 0;
+             }
+             .button{
+                margin-top: 20px;
+                margin-left: 85px;
+                margin-bottom: 20px;
+               
+             }
+        
+        
+             .start-main-section{
+                grid-template-columns:repeat(1,1fr);
+              
+             }
+             .three-items{
+                background-color:white;
+                height: 200px;
+                border-radius: 5px;
+                margin-right: 10px;
+                
+             }
+             .navi{
+                background-color: white;
+                width: 200px;
+                margin-top: 0;
+                margin-left: 65px;
+               
+             }
+             .navi a{
+                font-size: 25px;
+                color: black;
+             }
+        
+             .player-team{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            
+             }
+        
+             .tlink{
+                margin-left: 10px;
+             }
+             .tlink a{
+                font-size: 20px;
+                color:black ;
+             }
+             .players h3{
+                font-size: 25px;
+                margin-left: 10px;
+            
+             }
+             .players p{
+                margin-left: 10px;
+                font-size: 30px;
+             }
+             .players span{
+                margin-left: 20px;
+             }
+        
+             .footer-sec a{
+              margin-bottom: 30px;
+              display: block; 
+              font-size: 20px;
+           }
+           .footer-sec hr{
+              width: 300px;
+              color: rgb(29, 28, 28) !important;
+           }
+           .footer-icon a{
+              display: inline;
+           }
+        
+            
+        }
+        
+        @media only screen and (min-width: 689px) and (max-width: 992px) {
+        
+        
+           .banner{
+              width: 100%;
+              margin: 0;
+              margin-left: 0;
+              margin-top: 20px;
+           
+           }
+           .container{
+              grid-template-columns: repeat(2, 1fr);
+              padding: 0;
+              text-align: center; 
+            
+           }
+           .text h1{
+              font-size: 40px;
+              margin-left: 40px;
+              margin-top: 50px;
+              text-align: justify;
+           }
+           .text p{
+             display: block;
+             margin-left: 40px;
+             text-align: justify;
+             
+           }
+           .toltip{
+              display: none!important;
+              width: 100%;
+          
+           }
+           .player-banner img{
+              width: 100%;
+              margin-top: 40px;
+           }
+           .button{
+              margin-top: 20px;
+              margin-left: 40px;
+              border-radius: 5px;
+           
+           }
+        
+           .start-main-section{
+              display: grid;
+              grid-template-columns: 30% 70%;
+              grid-row-gap: 20px;
+           }
+          
+           .three-items{
+              background-color:white;
+              height:200px;
+              border-radius: 5px;
+              margin-right: 0;
+              margin-bottom: 20px;
+              margin-top: 30px;
+              justify-content: center;
+              
+           }
+           .navi{
+              background-color: white;
+              width: 200px;
+              margin-top: 0;
+              margin-left:0;
+              border: 1px solid rgb(216, 205, 205);
+              margin-left: 5px;
+             
+           }
+           .navi a{
+              font-size: 25px;
+              color: black;
+           }
+           .tlink{
+              margin-left: 10px;
+           }
+           .tlink a{
+              font-size: 16px;
+              color:black ;
+           }
+           .player-team{
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 10px;
+              margin-bottom: 50px;
+          
+           }
+           #none{
+              display: none;
+           }
+           .players h3{
+              font-size: 18px;
+              margin-left: 10px;
+          
+           }
+           .players p{
+              margin-left: 10px;
+              font-size: 20px;
+           }
+           .players span{
+              margin-left: 20px;
+           }
+           .view-all a{
+              text-decoration: none;
+              font-size: 20px;
+              border: 1px solid red;
+              padding: 10px 20px;
+              background-color: red;
+              color: white;
+              display: inline-block;
+           }
+        
+           .footer-sec a{
+            margin-bottom: 60px;
+            display: inline; 
+            font-size: 18px;
+            margin-top: 20px;
+          
+            
+         }
+         .footer-sec hr{
+            width: 600px;
+            color: rgb(29, 28, 28) ;
+         }
+         .footer-icon a{
+            display: inline;
+         }
+        
+        
+        
+        }
+        
+        
+        @media only screen and (min-width: 993px) and (max-width: 1920px) {
+        
+           .banner{
+              width: 95%;
+              margin: 0;
+              margin-left:50px;
+              margin-top: 50px;
+              margin-bottom: 150px;
+              border-radius: 10%!important;
+           
+           }
+           .container{
+             
+              grid-template-columns: repeat(2, 1fr);
+              padding: 0;
+              text-align: center; 
+            
+           }
+           
+           .text h1{
+              font-size: 90px;
+              margin-top: 100px;
+              text-align: justify;
+              margin-left: 135px;
+           }
+           .text p{
+              font-size: 22px;
+             display: block;
+             margin-left: 135px;
+             color: rgb(179, 172, 172);
+             margin-bottom: 105px;
+             font-weight: 400;
+             text-align: justify;
+             
+           }
+           .toltip{
+              display: none!important;
+              width: 100%;
+          
+           }
+           .player-banner img{
+              width: 100%;
+              height: 95%;
+              margin-top: 40px;
+           }
+           .button{
+              margin-top: 20px;
+              margin-left: 135px;
+              border-radius: 5px;
+              width: 215px;
+              height: 70px;
+              margin-bottom: 100px;
+              background-color: red;
+        
+           
+           }
+           .button a{
+              margin-left: 20px;
+              font-size: 30px;
+           }
+           .start-main-section{
+              display: grid;
+              grid-template-columns: 30% 70%;
+              grid-column-gap: 20px;
+           }
+        
+           
+          
+           .three-items{
+              display: block;
+              background-color:black;
+              height: 300px;
+              border-radius: 5px;
+              margin-right: 0;
+              margin-bottom: 0;
+              margin-top: 0;
+              padding: 20px;
+              
+           }
+           .navi{
+              background-color: white;
+              width: 350px;
+              height: 57px;
+              margin-top: 12px;
+              border: 1px solid rgb(216, 205, 205);
+              margin-left: 50px;
+              margin-bottom: 20px;
+              text-align: center;
+           
+             
+           }
+           .navi a{
+              font-size: 25px;
+              color: black;
+              margin-top: 12px;
+              display: inline-block;
+           }
+        
+           .player-team{
+              display: grid;
+              grid-template-columns: repeat(1, 1fr);
+              margin-bottom: 40px;
+          
+           }
+        
+           .tlink{
+              margin-left: 10px;
+           }
+           .tlink a{
+              font-size: 20px;
+              color:black ;
+           }
+           .player-team{
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 10px;
+          
+           }
+           #none{
+              display: none;
+           }
+           .players h3{
+              font-size: 25px;
+              margin-left: 10px;
+          
+           }
+           .players p{
+              margin-left: 10px;
+              font-size: 30px;
+           }
+           .players span{
+              margin-left: 20px;
+           }
+           .view-all a{
+              text-decoration: none;
+              font-size: 20px;
+              border: 1px solid red;
+              padding: 10px 20px;
+              background-color: red;
+              color: white;
+              display: none;
+           }
+        
+           .footer-sec a{
+            margin-bottom: 40px;
+            display: inline; 
+            font-size: 18px;
+            line-height: 1;
+            
+         }
+        
+         .footer-icon a{
+            display: inline;
+         }
+        
+        
+        }
+
+        
