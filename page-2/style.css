@@ -1,0 +1,510 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway&family=Ubuntu&display=swap');
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+ /*  start the header area */
+ .header-area{
+    width: 70%;
+    margin: 30px 30px 30px 92px;
+
+ }
+ .container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px 20px 0;
+    border-radius: 10px;
+  
+    
+ }
+ 
+ .text h1{
+    font-size: 45px;
+    font-weight: 600;
+    transition: ease-in color 2s;
+ }
+ .container:hover h1{
+   color: rgb(236, 179, 22);
+   transition: 2s;
+ }
+ 
+ .text p{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(243, 224, 224);
+    transition: color 2s;
+   
+ }
+ .container:hover p{
+   color: rgb(10, 185, 133);
+   transition: 2s;
+   
+ }
+ .toltip{
+    display: none;
+    width: 100%;
+
+ }
+
+
+ .image img{
+    width: 100%;
+    margin-top: 45px;
+ }
+
+ .button{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(233, 63, 12);
+    align-items: center;
+    margin-bottom: 20px;
+    transition: transform 2s, background-color 2s; 
+ }
+ .container:hover .button{
+   transform: scale(1.1);
+   transition: 2s;
+   background-color: rgb(236, 145, 8);
+ }
+ .button-link a{
+    text-decoration: none;
+    color: rgb(233, 230, 230);
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+ }
+.player-team{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+ .pics{
+    display: flex;
+   justify-content: space-evenly;
+    margin: 10px;
+    margin-top: 50px;
+    
+ }
+ .box{
+    border: 2px solid rgb(243, 226, 226);
+    margin-bottom: 30px;
+    border-radius: 10px;
+ }
+ .box h3{
+    text-align: center;
+    font-size: 22px;
+ }
+ 
+ .box h5{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: gray;
+
+ }
+
+ /*  end the header area  */
+
+
+
+ /* main area start   */
+ .main-section{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-row-gap: 10px;
+ }
+ .three-column{
+    background-color:black;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 10px;
+ }
+ #blog{
+    background-color: red;
+   
+ }
+ #blog a{
+    color: white!important;
+
+ }
+ .main-navigation{
+    background-color: white;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 12px;
+    text-align: center;
+    border-radius: 5px;
+ }
+ .main-navigation a{
+    text-decoration: none;
+    font-weight: 600;
+ }
+
+ .player-team{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ }
+
+
+
+ 
+ 
+ /* main area end   */
+
+
+ /* footer area start  */
+
+ footer{
+    background-color: black;
+    color: white;
+    
+ }
+ .footer-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+ }
+ .footer-section h3{
+    font-size: 38px;
+ }
+ .footer-section hr{
+    margin-bottom: 20px;
+ }
+ .footer-section a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    
+ }
+ .icon{
+    margin-top: 20px;
+ }
+ /* footer area end  */
+
+
+
+ /* media query start  */
+
+@media only screen and (max-width: 688px) {
+    .header-area{
+        width: 95%;
+        margin: 0;
+        margin-left: 12px;
+        margin-top: 10px;
+     
+     }
+     .container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        text-align: center; 
+      
+     }
+     .text h1{
+        font-size: 55px;
+     }
+     .text p{
+       display: none;
+       
+     }
+     .toltip{
+        display: block!important;
+      
+     }
+     .image img{
+        width: 80%;
+        margin-top: 0;
+     }
+     .button{
+        margin-top: 20px;
+        margin-left: 85px;
+        margin-bottom: 20px;
+       
+     }
+
+
+     .main-section{
+        grid-template-columns:repeat(1,1fr);
+      
+     }
+     .three-column{
+        background-color:white;
+        height: 200px;
+        border-radius: 5px;
+        margin-right: 10px;
+        
+     }
+     .main-navigation{
+        background-color: white;
+        width: 200px;
+        margin-top: 0;
+        margin-left: 65px;
+       
+     }
+     .main-navigation a{
+        font-size: 25px;
+        color: black;
+     }
+     .player-team{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+    }
+
+   
+
+     .footer-section a{
+      margin-bottom: 30px;
+      display: block; 
+      font-size: 20px;
+   }
+   .footer-section hr{
+      width: 300px;
+      color: rgb(29, 28, 28) !important;
+   }
+   .icon a{
+      display: inline;
+   }
+
+    
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+
+   .header-area{
+      width: 100%;
+      margin: 0;
+      margin-left: 0;
+      margin-top: 20px;
+   
+   }
+   .container{
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0;
+      text-align: center; 
+    
+   }
+   .text h1{
+      font-size: 40px;
+      margin-left: 40px;
+      margin-top: 50px;
+      text-align: justify;
+   }
+   .text p{
+     display: block;
+     margin-left: 40px;
+     text-align: justify;
+     
+   }
+   .toltip{
+      display: none!important;
+      width: 100%;
+  
+   }
+   .image img{
+      width: 100%;
+      margin-top: 40px;
+   }
+   .button{
+      margin-top: 20px;
+      margin-left: 40px;
+      border-radius: 5px;
+   
+   }
+
+   .main-section{
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-row-gap: 10px;
+   }
+   /* .three-column */
+  
+   .three-column{
+      background-color:white;
+      height:200px;
+      border-radius: 5px;
+      margin-right: 0;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      justify-content: center;
+      
+   }
+   .main-navigation{
+      background-color: white;
+      width: 200px;
+      margin-top: 0;
+      margin-left:0;
+      border: 1px solid rgb(216, 205, 205);
+      margin-left: 5px;
+     
+   }
+   .main-navigation a{
+      font-size: 25px;
+      color: black;
+   }
+   .player-team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+   
+ 
+
+   .footer-section a{
+    margin-bottom: 60px;
+    display: inline; 
+    font-size: 18px;
+    margin-top: 20px;
+  
+    
+ }
+ .footer-section hr{
+    width: 600px;
+    color: rgb(29, 28, 28) !important;
+ }
+ .icon a{
+    display: inline;
+ }
+
+
+
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1920px) {
+
+   .header-area{
+      width: 95%;
+      margin: 0;
+      margin-left:50px;
+      margin-top: 50px;
+      margin-bottom: 150px;
+      border-radius: 10%!important;
+   
+   }
+   .container{
+     
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0;
+      text-align: center; 
+    
+   }
+   
+   .text h1{
+      font-size: 90px;
+      margin-top: 100px;
+      text-align: justify;
+      margin-left: 135px;
+   }
+   .text p{
+      font-size: 22px;
+     display: block;
+     margin-left: 135px;
+     color: rgb(179, 172, 172);
+     margin-bottom: 105px;
+     font-weight: 400;
+     text-align: justify;
+     
+   }
+   .toltip{
+      display: none!important;
+      width: 100%;
+  
+   }
+   .image img{
+      width: 100%;
+      height: 95%;
+      margin-top: 40px;
+   }
+   .button{
+      margin-top: 20px;
+      margin-left: 135px;
+      border-radius: 5px;
+      width: 215px;
+      height: 70px;
+      margin-bottom: 100px;
+      background-color: rgb(243, 62, 62):
+
+   
+   }
+   .button a{
+      margin-left: 20px;
+      font-size: 30px;
+   }
+   .main-section{
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-column-gap: 20px;
+   }
+
+   
+  
+   .three-column{
+      display: block;
+      background-color:black;
+      height: 300px;
+      border-radius: 5px;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: 20px;
+      
+   }
+   .main-navigation{
+      background-color: white;
+      width: 350px;
+      height: 57px;
+      margin-top: 12px;
+      border: 1px solid rgb(216, 205, 205);
+      margin-left: 50px;
+      margin-bottom: 20px;
+      text-align: center;
+   
+     
+   }
+   .main-navigation a{
+      font-size: 25px;
+      color: black;
+      margin-top: 12px;
+      display: inline-block;
+   }
+
+  
+
+   
+   .view a{
+      text-decoration: none;
+      font-size: 20px;
+      border: 1px solid red;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      display: none;
+   }
+
+   .footer-section a{
+    margin-bottom: 40px;
+    display: inline; 
+    font-size: 18px;
+    line-height: 1;
+    
+ }
+
+ .icon a{
+    display: inline;
+ }
+
+
+}
